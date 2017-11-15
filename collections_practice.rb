@@ -67,5 +67,17 @@ def find_cool(cool)
 end
 
 def organized_schools(schools)
-
+  final = {}
+  schools.each do |school_name, place|
+    #puts place[:location]
+    location = place[:location]
+    if final[location]
+      #puts final[location]
+      final[location] << school_name
+    else
+      final[location] = []
+      final[location] << school_name
+    end
+  end
+  final
 end
