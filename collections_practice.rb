@@ -57,10 +57,11 @@ end
 def find_cool(cool)
   cool.each do |cool_hash|
     cool_hash.each do |key, value|
+      binding.pry
       if value = "cool"
 
 
-        binding.pry
+        
       end
     end
   end
