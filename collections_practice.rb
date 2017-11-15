@@ -57,7 +57,7 @@ def find_cool(cool)
   cool.each do |cool_hash|
     cool_hash.each do |key, value|
       if value = "cool"
-        return cool_hash
+        return cool_hash[key]
       end
     end
   end
