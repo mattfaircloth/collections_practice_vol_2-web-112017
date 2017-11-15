@@ -46,6 +46,7 @@ def merge_data(keys, data)
     binding.pry
     data.each do |name_info|
         if name_info[name]
+          binding.pry
           merged_person = name_info[name]
           merged_person[:first_name] = name
           final << merged_person
