@@ -55,11 +55,13 @@ def merge_data(keys, data)
 end
 
 def find_cool(cool)
+  final = []
   cool.each do |cool_hash|
     cool_hash.each do |key, value|
       if value == "cool"
-        return cool_hash
+        final << cool_hash
       end
     end
   end
+  final
 end
