@@ -43,7 +43,6 @@ def merge_data(keys, data)
   final = []
   keys.each do |full_name|
     name = full_name[:first_name]
-    binding.pry
     data.each do |name_info|
         if name_info[name]
           binding.pry
