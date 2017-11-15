@@ -1,4 +1,6 @@
 # your code goes here
+require 'pry'
+
 def begins_with_r(array)
   array.each do |word|
      if word[0] != "r"
@@ -41,6 +43,7 @@ def merge_data(keys, data)
   final = []
   keys.each do |full_name|
     name = full_name[:first_name]
+    binding.pry
     data.each do |name_info|
         if name_info[name]
           merged_person = name_info[name]
