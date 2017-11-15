@@ -32,12 +32,19 @@ def remove_non_strings(array)
   array.delete_if {|word| word.class != String}
 end
 
-# def count_elements(array)
-#   value_counter = 0
-#   array.each do |key, value|
-#
-#   end
-# end
+def count_elements(array)
+  array.each do |name_hash|
+    name = name_hash[:name]
+    name_hash[:count] = 0
+    #puts name_hash
+    array.each do |hash|
+      if hash[:name] == name
+        name_hash[:count] += 1
+      end
+    end
+  end
+  array.uniq
+end
 
 def merge_data(keys, data)
   final = []
