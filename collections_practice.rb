@@ -1,4 +1,5 @@
 # your code goes here
+require 'pry'
 
 def begins_with_r(array)
   array.each do |word|
@@ -57,7 +58,9 @@ def find_cool(cool)
   cool.each do |cool_hash|
     cool_hash.each do |key, value|
       if value = "cool"
-        return cool_hash[key]
+
+
+        binding.pry
       end
     end
   end
